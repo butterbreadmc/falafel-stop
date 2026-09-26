@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Falafel Stop · Wraps and bowls in Melbourne, FL</title>
+  <meta name="description" content="Falafel, shawarma, kofta and hummus wraps and bowls at 1915 Dr. MLK Jr. Blvd, Melbourne, FL. Dine in, takeout and catering. Call (321) 327-2240." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Helps Google show hours, address and phone in search results. -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Falafel Stop",
+    "alternateName": "Falafel Stop Wraps & Bowls",
+    "url": "https://www.myfalafelstop.com",
+    "servesCuisine": ["Middle Eastern", "Mediterranean"],
+    "telephone": "+1-321-327-2240",
+    "priceRange": "$",
+    "acceptsReservations": false,
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "1915 Dr. MLK Jr. Blvd.",
+      "addressLocality": "Melbourne",
+      "addressRegion": "FL",
+      "postalCode": "32901",
+      "addressCountry": "US"
+    },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday"], "opens": "11:00", "closes": "18:30" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Friday", "opens": "11:00", "closes": "12:45" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Friday", "opens": "14:15", "closes": "18:30" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "11:30", "closes": "17:00" }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#top" class="logo"><span class="logo-mark" aria-hidden="true"></span>Falafel Stop</a>
+      <nav class="nav" aria-label="Main">
+        <a href="#menu">Menu</a>
+        <a href="#story">About</a>
+        <a href="#catering">Catering</a>
+        <a href="#visit">Visit</a>
+      </nav>
+      <a href="tel:+13213272240" class="btn btn-dark btn-sm">Call to order</a>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <p class="eyebrow">Wraps and bowls · Melbourne, FL</p>
+          <h1>Fresh falafel, shawarma and hummus, made to order</h1>
+          <p class="lead">Crispy falafel, chicken and beef shawarma, and kofta kabab, served as a wrap, a bowl, or on a plate of hummus.</p>
+          <div class="hero-actions">
+            <a href="#menu" class="btn btn-dark">View menu</a>
+            <a href="https://maps.google.com/?q=1915+Dr+MLK+Jr+Blvd+Melbourne+FL+32901" target="_blank" rel="noopener" class="btn btn-outline">Get directions</a>
+          </div>
+          <ul class="badges">
+            <li>Dine in and takeout</li>
+            <li>Vegetarian options</li>
+            <li>Catering</li>
+          </ul>
+        </div>
+        <div class="hero-photo photo" role="img" aria-label="Photo of a falafel wrap">
+          <span>Hero photo</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quick info bar -->
+    <section class="info-bar">
+      <div class="container info-grid">
+        <div class="info-item">
+          <span class="info-label">Today</span>
+          <span class="info-value"><span id="open-status" class="status-dot"></span><span id="today-hours">11am – 6:30pm</span></span>
+        </div>
+        <a class="info-item" href="https://maps.google.com/?q=1915+Dr+MLK+Jr+Blvd+Melbourne+FL+32901" target="_blank" rel="noopener">
+          <span class="info-label">Address</span>
+          <span class="info-value">1915 Dr. MLK Jr. Blvd.</span>
+        </a>
+        <a class="info-item" href="tel:+13213272240">
+          <span class="info-label">Call to order</span>
+          <span class="info-value">(321) 327-2240</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- Popular dishes -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Popular dishes</h2>
+          <a href="#menu" class="link-arrow">See full menu →</a>
+        </div>
+        <div class="dish-grid">
+          <article class="dish">
+            <div class="photo dish-photo"><span>Photo</span></div>
+            <div class="dish-row"><h3>Falafel wrap</h3><span class="price">$6.99</span></div>
+            <p>Falafel with hummus, lettuce, tomato, pickles and tahini sauce.</p>
+          </article>
+          <article class="dish">
+            <div class="photo dish-photo"><span>Photo</span></div>
+            <div class="dish-row"><h3>Chicken shawarma bowl</h3><span class="price">$10.75</span></div>
+            <p>Served with your choice of rice, fries or salad.</p>
+          </article>
+          <article class="dish">
+            <div class="photo dish-photo"><span>Photo</span></div>
+            <div class="dish-row"><h3>Hummus with beef shawarma</h3><span class="price">$12.99</span></div>
+            <p>Topped with beef shawarma and served with pita bread, sauce and pickles.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Full menu -->
+    <section class="section section-alt" id="menu">
+      <div class="container">
+        <div class="section-head">
+          <h2>Menu</h2>
+          <p class="muted">Prices subject to change without notice.</p>
+        </div>
+
+        <div class="menu-tabs" role="tablist" aria-label="Menu categories">
+          <button role="tab" aria-selected="true" data-tab="plates">Plates and bowls</button>
+          <button role="tab" aria-selected="false" data-tab="wraps">Salads and wraps</button>
+          <button role="tab" aria-selected="false" data-tab="appetizers">Appetizers and soup</button>
+          <button role="tab" aria-selected="false" data-tab="sides">Sides and drinks</button>
+          <button role="tab" aria-selected="false" data-tab="desserts">Desserts</button>
+        </div>
+
+        <div class="menu-panel" data-panel="plates">
+          <div class="menu-item"><div><h3>Falafel bowl <span class="qty">6 pieces</span></h3><p>Served with your choice of rice, fries or salad</p></div><span class="price">$8.99</span></div>
+          <div class="menu-item"><div><h3>Chicken shawarma bowl</h3><p>Served with your choice of rice, fries or salad</p></div><span class="price">$10.75</span></div>
+          <div class="menu-item"><div><h3>Beef shawarma bowl</h3><p>Served with your choice of rice, fries or salad</p></div><span class="price">$12.25</span></div>
+          <div class="menu-item"><div><h3>Kofta kabab bowl</h3><p>Served with your choice of rice, fries or salad</p></div><span class="price">$11.50</span></div>
+          <div class="menu-item"><div><h3>Add a small salad or hummus</h3><p>To any bowl</p></div><span class="price">$3.50</span></div>
+          <div class="menu-subhead">
+            <h3>Hummus with toppings</h3>
+            <p>Served with pita bread, sauce and pickles</p>
+          </div>
+          <div class="menu-item"><div><h3>Chicken shawarma</h3></div><span class="price">$12.75</span></div>
+          <div class="menu-item"><div><h3>Beef shawarma</h3></div><span class="price">$12.99</span></div>
+          <div class="menu-item"><div><h3>Kofta <span class="qty">ground beef</span></h3></div><span class="price">$12.99</span></div>
+        </div>
+
+        <div class="menu-panel" data-panel="wraps" hidden>
+          <div class="menu-item"><div><h3>Falafel wrap</h3><p>Hummus, lettuce, tomato, pickles and tahini sauce</p></div><span class="price">$6.99</span></div>
+          <div class="menu-item"><div><h3>Chicken shawarma wrap</h3><p>Hummus, lettuce, tomato, pickles and garlic sauce</p></div><span class="price">$9.25</span></div>
+          <div class="menu-item"><div><h3>Beef shawarma wrap</h3><p>Hummus, lettuce, tomato, pickles and tahini sauce</p></div><span class="price">$10.49</span></div>
+          <div class="menu-item"><div><h3>Kofta kabab wrap</h3><p>Hummus, lettuce, tomato, pickles and tahini sauce</p></div><span class="price">$9.50</span></div>
+          <div class="menu-item"><div><h3>Garden salad</h3><p>Lettuce, tomato, cucumber and house dressing</p></div><span class="price">$6.99</span></div>
+          <div class="menu-item"><div><h3>Diced salad</h3><p>Onion, tomato, cucumber and house dressing</p></div><span class="price">$6.99</span></div>
+        </div>
+
+        <div class="menu-panel" data-panel="appetizers" hidden>
+          <div class="menu-item"><div><h3>Falafel <span class="qty">3 pieces</span></h3><p>Made from garbanzo beans mixed with vegetables and spices</p></div><span class="price">$2.75</span></div>
+          <div class="menu-item"><div><h3>Hummus</h3><p>Served with pita bread</p></div><span class="price">$6.49</span></div>
+          <div class="menu-item"><div><h3>Baba ghanouj</h3><p>Eggplant and tahini sauce, served with pita bread</p></div><span class="price">$6.99</span></div>
+          <div class="menu-item"><div><h3>Appetizer combination plate</h3><p>Hummus, baba ghanouj and falafel, served with pita bread</p></div><span class="price">$10.49</span></div>
+          <div class="menu-item"><div><h3>Lentil soup</h3><p>Served with pita bread</p></div><span class="price">$3.75</span></div>
+        </div>
+
+        <div class="menu-panel" data-panel="sides" hidden>
+          <div class="menu-item"><div><h3>French fries</h3></div><span class="price">$3.50</span></div>
+          <div class="menu-item"><div><h3>Basmati rice</h3></div><span class="price">$3.50</span></div>
+          <div class="menu-item"><div><h3>Soda cans</h3></div><span class="price">$1.50</span></div>
+          <div class="menu-item"><div><h3>Soda bottles</h3></div><span class="price">$2.25</span></div>
+          <div class="menu-item"><div><h3>Juice and tea bottles</h3></div><span class="price">$2.49</span></div>
+          <div class="menu-item"><div><h3>Vimto</h3><p>Imported drink</p></div><span class="price">$2.25</span></div>
+        </div>
+
+        <div class="menu-panel" data-panel="desserts" hidden>
+          <div class="menu-item"><div><h3>Baklawa <span class="qty">walnut filling</span></h3></div><span class="price">$1.75</span></div>
+          <div class="menu-item"><div><h3>Baklawa <span class="qty">cashew filling</span></h3></div><span class="price">$1.25</span></div>
+          <div class="menu-item"><div><h3>Honey almond cake</h3></div><span class="price">$2.25</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Story -->
+    <section class="section" id="story">
+      <div class="container story">
+        <div class="photo story-photo" role="img" aria-label="Photo of the restaurant"><span>Photo of the restaurant or the family</span></div>
+        <div>
+          <p class="eyebrow">About us</p>
+          <h2>A family restaurant in Melbourne</h2>
+          <p>This is where your dad's story goes: where he grew up, where the recipes come from, and why he opened Falafel Stop. Keep it short and personal. People love knowing who's cooking their food.</p>
+          <p>Mention what makes the place special, like falafel fried fresh to order or the regulars who come back every week.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Order + catering -->
+    <section class="section section-alt" id="order">
+      <div class="container cta-grid">
+        <div class="cta-card">
+          <h2>Order online</h2>
+          <p>Get delivery through Uber Eats or DoorDash, or call in your order and pick it up.</p>
+          <div class="cta-actions">
+            <a href="https://www.ubereats.com/store/falafel-stop/Yfz_KZZFWPuvG8gngyMzmQ" target="_blank" rel="noopener" class="btn btn-outline">Uber Eats</a>
+            <a href="https://www.doordash.com/store/falafel-stop-mediterranean-cuisine-melbourne-1125636/" target="_blank" rel="noopener" class="btn btn-outline">DoorDash</a>          </div>
+          <div class="cta-actions">
+            <a href="tel:+13213272240" class="btn btn-dark">Call (321) 327-2240</a>
+          </div>
+        </div>
+        <div class="cta-card cta-warm" id="catering">
+          <h2>We cater</h2>
+          <p>The next time you need a catered meal for your event, give us a call for more details.</p>
+          <div class="cta-actions">
+            <a href="tel:+13213272240" class="btn btn-dark">Ask about catering</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Visit -->
+    <section class="section" id="visit">
+      <div class="container visit">
+        <div class="map">
+          <iframe
+            title="Map to Falafel Stop"
+            src="https://www.google.com/maps?q=1915+Dr+MLK+Jr+Blvd+Melbourne+FL+32901&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div>
+          <h2>Visit us</h2>
+          <p class="address">1915 Dr. MLK Jr. Blvd.<br />Melbourne, FL 32901</p>
+          <p><a href="tel:+13213272240" class="link">(321) 327-2240</a></p>
+          <table class="hours" id="hours-table" aria-label="Opening hours"></table>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="logo"><span class="logo-mark" aria-hidden="true"></span>Falafel Stop</span>
+      <div class="footer-links">
+        <a href="tel:+13213272240">(321) 327-2240</a>
+        <a href="https://maps.google.com/?q=1915+Dr+MLK+Jr+Blvd+Melbourne+FL+32901" target="_blank" rel="noopener">Directions</a>
+      </div>
+      <span class="muted small">© <span id="year"></span> Falafel Stop · Wraps and bowls</span>
+    </div>
+  </footer>
+
+  <!-- Sticky bar on phones -->
+  <div class="mobile-bar">
+    <a href="tel:+13213272240">Call</a>
+    <a href="https://maps.google.com/?q=1915+Dr+MLK+Jr+Blvd+Melbourne+FL+32901" target="_blank" rel="noopener">Directions</a>
+    <a href="#menu">Menu</a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
