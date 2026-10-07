@@ -89,7 +89,8 @@ a { color: inherit; }
 .hero h1 { margin-bottom: 1rem; }
 .lead { font-size: 1.125rem; color: var(--ink-soft); max-width: 34rem; }
 .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin: 1.5rem 0; }
-.hero-photo { aspect-ratio: 4 / 3.5; }
+.hero-photo { display: flex; align-items: center; justify-content: center; }
+.hero-photo img { width: 100%; max-width: 480px; height: auto; filter: drop-shadow(0 18px 24px rgba(31, 58, 63, 0.18)); }
 .badges { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 8px; }
 .badges li { background: #dfe5bf; color: var(--amber-dark); font-size: 0.8rem; font-weight: 600; padding: 5px 12px; border-radius: 999px; }
 
@@ -112,8 +113,13 @@ a.info-item:hover { background: var(--cream); }
 .section-head p { margin: 0; }
 
 /* Dishes */
-.dish-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
-.dish-photo { aspect-ratio: 4 / 3; margin-bottom: 14px; }
+.dish-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px 24px; }
+.dish-photo {
+  aspect-ratio: 4 / 3; max-width: 100%; margin-bottom: 14px;
+  background: var(--sand); border-radius: var(--radius);
+  display: flex; align-items: center; justify-content: center; padding: 16px;
+}
+.dish-photo img { max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain; filter: drop-shadow(0 10px 14px rgba(31, 58, 63, 0.16)); }
 .dish-row { display: flex; justify-content: space-between; gap: 12px; margin-bottom: 4px; }
 .dish p { color: var(--ink-soft); font-size: 0.925rem; margin: 0; }
 .price { font-weight: 600; white-space: nowrap; }
@@ -186,8 +192,10 @@ a.info-item:hover { background: var(--cream); }
   .nav { display: none; }
   .hero { padding: 40px 0; }
   .hero-inner, .story, .visit, .cta-grid { grid-template-columns: 1fr; gap: 28px; }
-  .hero-photo { order: -1; aspect-ratio: 16 / 10; }
-  .dish-grid, .review-grid { grid-template-columns: 1fr; }
+  .hero-photo { order: -1; }
+  .hero-photo img { max-width: 300px; }
+  .dish-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .review-grid { grid-template-columns: 1fr; }
   .menu-panel { grid-template-columns: 1fr; }
   .section { padding: 52px 0; }
   .story-photo { aspect-ratio: 16 / 10; }
@@ -199,6 +207,8 @@ a.info-item:hover { background: var(--cream); }
   .info-item:last-child { border-bottom: 0; }
   .menu-tabs { flex-wrap: nowrap; overflow-x: auto; margin: 0 -20px 24px; padding: 0 20px; scrollbar-width: none; }
   .menu-tabs button { flex-shrink: 0; }
+  .dish-grid { grid-template-columns: minmax(0, 1fr); }
+  .dish-photo { aspect-ratio: 16 / 10; }
   .cta-card { padding: 24px; }
   .site-header .btn { display: none; }
 
