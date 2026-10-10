@@ -65,6 +65,7 @@ a { color: inherit; }
 }
 .header-inner { display: flex; align-items: center; justify-content: space-between; height: 64px; gap: 16px; }
 .logo { font-family: var(--serif); font-size: 1.35rem; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; }
+.logo-img img { height: 46px; width: auto; display: block; }
 .logo-mark {
   width: 18px; height: 18px; background: var(--amber);
   clip-path: polygon(30% 0, 70% 0, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0 70%, 0 30%);
