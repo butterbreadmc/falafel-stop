@@ -147,7 +147,8 @@ a.info-item:hover { background: var(--cream); }
 
 /* Story */
 .story { display: grid; grid-template-columns: 1fr 1.2fr; gap: 56px; align-items: center; }
-.story-photo { aspect-ratio: 1; }
+.story-photo { aspect-ratio: 4 / 3; max-width: 100%; border-radius: var(--radius); overflow: hidden; background: var(--sand); }
+.story-photo img { width: 100%; height: 100%; object-fit: cover; object-position: 40% 50%; display: block; }
 .story h2 { margin-bottom: 1rem; }
 .story p:not(.eyebrow) { color: var(--ink-soft); }
 
