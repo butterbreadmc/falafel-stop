@@ -113,7 +113,7 @@ a.info-item:hover { background: var(--cream); }
 .section-head p { margin: 0; }
 
 /* Dishes */
-.dish-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px 24px; }
+.dish-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 32px 20px; }
 .dish-photo {
   aspect-ratio: 4 / 3; max-width: 100%; margin-bottom: 14px;
   background: var(--sand); border-radius: var(--radius);
