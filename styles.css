@@ -116,11 +116,16 @@ a.info-item:hover { background: var(--cream); }
 /* Dishes */
 .dish-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 32px 20px; }
 .dish-photo {
+  position: relative; overflow: hidden;
   aspect-ratio: 4 / 3; max-width: 100%; margin-bottom: 14px;
   background: var(--sand); border-radius: var(--radius);
-  display: flex; align-items: center; justify-content: center; padding: 16px;
 }
-.dish-photo img { max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain; filter: drop-shadow(0 10px 14px rgba(31, 58, 63, 0.16)); }
+/* Absolutely positioned so Safari sizes the photo to the box instead of its natural size. */
+.dish-photo img {
+  position: absolute; top: 16px; left: 16px;
+  width: calc(100% - 32px); height: calc(100% - 32px);
+  object-fit: contain;
+}
 .dish-row { display: flex; justify-content: space-between; gap: 12px; margin-bottom: 4px; }
 .dish p { color: var(--ink-soft); font-size: 0.925rem; margin: 0; }
 .price { font-weight: 600; white-space: nowrap; }
@@ -148,8 +153,8 @@ a.info-item:hover { background: var(--cream); }
 
 /* Story */
 .story { display: grid; grid-template-columns: 1fr 1.2fr; gap: 56px; align-items: center; }
-.story-photo { aspect-ratio: 4 / 3; max-width: 100%; border-radius: var(--radius); overflow: hidden; background: var(--sand); }
-.story-photo img { width: 100%; height: 100%; object-fit: cover; object-position: 40% 50%; display: block; }
+.story-photo { position: relative; aspect-ratio: 4 / 3; max-width: 100%; border-radius: var(--radius); overflow: hidden; background: var(--sand); }
+.story-photo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 40% 50%; }
 .story h2 { margin-bottom: 1rem; }
 .story p:not(.eyebrow) { color: var(--ink-soft); }
 
